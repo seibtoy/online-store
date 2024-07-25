@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Fox product 1",
+    "price": 120.00,
+    "category": "Forest",
+    "rating": 5,
+    "image": "img/product1.png"
+  },
+  {
+    "id": 2,
+    "name": "Fox product 2",
+    "price": 85.00,
+    "category": "Forest",
+    "rating": 4,
+    "image": "img/product2.png"
+  },
+  {
+    "id": 3,
+    "name": "Fox product 3",
+    "price": 499.99,
+    "category": "Fox kids",
+    "rating": 4,
+    "image": "img/product3.png"
+  },
+  {
+    "id": 4,
+    "name": "Fox product 4",
+    "price": 76.00,
+    "category": "Fox kids",
+    "rating": 5,
+    "image": "img/product4.png"
+  },
+  {
+    "id": 5,
+    "name": "Fox product 5",
+    "price": 83.00,
+    "category": "All",
+    "rating": 4,
+    "image": "img/product5.png"
+  },
+  {
+    "id": 6,
+    "name": "Fox product 6",
+    "price": 211.00,
+    "category": "All",
+    "rating": 4,
+    "image": "img/product6.png"
+  },
+  {
+    "id": 7,
+    "name": "Fox product 7",
+    "price": 35.00,
+    "category": "Other",
+    "rating": 4,
+    "image": "img/product7.png"
+  },
+  {
+    "id": 8,
+    "name": "Fox product 8",
+    "price": 266.00,
+    "category": "Other",
+    "rating": 4,
+    "image": "img/product8.png"
+  }
+]
