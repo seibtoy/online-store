@@ -6,6 +6,8 @@ const bag = document.getElementById('bag');
 
 const bagXmark = document.getElementById('bag-xmark');
 
+const overlay = document.querySelector('.overlay'); 
+
 const dots = document.getElementById('dots');
 
 const navMenu = document.getElementById('nav-menu');
@@ -27,10 +29,12 @@ let totalPrice = 0;
 bins.forEach(bin => {
     bin.addEventListener('click', () => {
         bag.classList.add('container-visibility');
+        overlay.classList.add('overlay-visible');
     });
 });
 bagXmark.addEventListener('click', () => {
     bag.classList.remove('container-visibility');
+    overlay.classList.remove('overlay-visible');
 });
 dots.addEventListener('click', () => {
     navMenu.classList.toggle('nav-menu-visible');
