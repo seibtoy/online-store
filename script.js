@@ -24,23 +24,29 @@ const valueProduct = document.getElementById('counter');
 
 const bagContainer = document.getElementById('bag-container');
 
+const searchButton = document.getElementById('search-button');
+
 let totalPrice = 0;
 
 bins.forEach(bin => {
     bin.addEventListener('click', () => {
         bag.classList.add('container-visibility');
         overlay.classList.add('overlay-visible');
+        bag.classList.remove('bag-hidden');
     });
 });
 bagXmark.addEventListener('click', () => {
     bag.classList.remove('container-visibility');
     overlay.classList.remove('overlay-visible');
+    bag.classList.add('bag-hidden');
 });
 dots.addEventListener('click', () => {
     navMenu.classList.toggle('nav-menu-visible');
+    overlay.classList.add('overlay-visible');
 });
 xmarkMobile.addEventListener('click', () => {
     navMenu.classList.remove('nav-menu-visible');
+    overlay.classList.remove('overlay-visible');
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -51,6 +57,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (firstProdContainer || secondProdContainer) {
                 renderCard(firstProdContainer, data, 0, 3);
                 renderCard(secondProdContainer, data, 4, 7);
+            }
+            function isMenuActive() {
+                if(bag.classList.contains('container-visibility')) {
+                    return true;
+                }
+
             }
 
             
@@ -107,9 +119,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                             </div>`;
                         bagContainer.innerHTML += productHTML;
+                        bag.classList.add('bag-hidden');
                         updateTotalPrice(productPrice);
                     }
-
                     
                     saveCart();
                 });
@@ -193,9 +205,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     const category = button.getAttribute('data-category').toLowerCase();
                     filterProducts(category);
                 });
-            });
+            }); 
 
-            const searchButton = document.getElementById('search-button');
             searchButton.addEventListener('click', () => {
                 const searchInput = document.getElementById('search-input');
                 const searchText = searchInput.value.toLowerCase();
