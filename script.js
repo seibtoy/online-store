@@ -22,10 +22,6 @@ const valueProduct = document.getElementById('counter');
 
 const bagContainer = document.getElementById('bag-container');
 
-const rangeValue = document.getElementById("range-value");
-
-const rangeInput = document.getElementById("range");
-
 let totalPrice = 0;
 
 bins.forEach(bin => {
@@ -42,12 +38,6 @@ dots.addEventListener('click', () => {
 xmarkMobile.addEventListener('click', () => {
     navMenu.classList.remove('nav-menu-visible');
 });
-
-rangeInput.addEventListener('input', () => {
-    rangeValue.textContent = "Value: " + rangeInput.value + "$";
-})
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
     fetch('products.json')
