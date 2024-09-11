@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 
@@ -14,11 +13,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="ites.css">
     <link rel="stylesheet" href="your-bag.css">
 </head>
 
 <body id="body">
+    <div class="overlay"></div>
     <div class="container" id="bag">
         <div class="container-header" id="container-header">
             <div class="xmark">
@@ -31,7 +32,7 @@
         </div>
         <div class="container-footer">
             <span>Total: </span>
-            <span id = "total">$0 </span>
+            <span id="total">$0 </span>
             <button class="checkout ">Checkout</button>
         </div>
     </div>
@@ -67,8 +68,8 @@
         <div class="main-container">
             <div class="search-container">
                 <div class="search">
-                    <input type="text" id = "search-input" placeholder="Search">
-                    <i class="fa-solid fa-magnifying-glass icon" id = "search-button"></i>
+                    <input type="text" id="search-input" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass icon" id="search-button"></i>
                 </div>
                 <div class="topic">
                     <span>Topic</span>
@@ -86,9 +87,9 @@
                 </div>
                 <div class="price">
                     <span>Price</span>
-                    <input type="range" class="scroll-bar">
+                    <input type="range" class="scroll-bar" id = "range">
                     <div class="value">
-                        <span>Value: 80$</span>
+                        <span id = "range-value">Value: 80$</span>
                     </div>
                 </div>
             </div>
@@ -156,169 +157,6 @@
 
 
     <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
 </body>
 
-=======
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Page Title</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="ites.css">
-    <link rel="stylesheet" href="your-bag.css">
-</head>
-
-<body id="body">
-    <div class="container" id="bag">
-        <div class="container-header" id="container-header">
-            <div class="xmark">
-                <i class="fa-solid fa-xmark" id="bag-xmark"></i>
-            </div>
-            <span class="gray-span">box</span>
-            <h1>Your bag</h1>
-        </div>
-        <div class="bag-container-parrent" id="bag-container">
-        </div>
-        <div class="container-footer">
-            <span>Total: </span>
-            <span id = "total">$0 </span>
-            <button class="checkout ">Checkout</button>
-        </div>
-    </div>
-    <header>
-        <div class="header-nav">
-            <div class="image-box dots">
-                <img src="img/dots.png" id="dots">
-            </div>
-            <div class="image-box foxminded-img">
-                <img src="img/foxminded-header.png" class="phone-img">
-                <img src="img/foxminded-footer.png" class="pc-img">
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <span class="orange-span">Shop</span>
-                <a href="index.html"><span href="index.html">Mainpage</span></a>
-                <a href="history.html"><span href="history.html">Our History</span></a>
-                <span>All ites</span>
-                <i class="fa-solid fa-xmark" id="xmark-mobile"></i>
-            </div>
-            <div class="image-box icons">
-                <img src="img/bin.png" class="img-bin white-icons bin">
-                <img src="img/fox.png" class="white-icons">
-                <img src="img/bin-black.png" class="img-bin black-icons bin">
-                <img src="img/fox-black.png" class="black-icons">
-            </div>
-        </div>
-        <div class="header-text">
-            <span>Home/All ites</span>
-            <h1>All ites</h1>
-        </div>
-    </header>
-    <main>
-        <div class="main-container">
-            <div class="search-container">
-                <div class="search">
-                    <input type="text" id = "search-input" placeholder="Search">
-                    <i class="fa-solid fa-magnifying-glass icon" id = "search-button"></i>
-                </div>
-                <div class="topic">
-                    <span>Topic</span>
-                    <div class="button-group1">
-                        <button class="filtering-button" data-category="Forest">Forest</button>
-                        <hr>
-                        <button class="filtering-button" data-category="Fox kids">Fox kids</button>
-                        <hr>
-                    </div>
-                    <div class="button-group2">
-                        <button class="filtering-button" data-category="All">All</button>
-                        <hr>
-                        <button class="filtering-button" data-category="Other">Other</button>
-                    </div>
-                </div>
-                <div class="price">
-                    <span>Price</span>
-                    <input type="range" class="scroll-bar">
-                    <div class="value">
-                        <span>Value: 80$</span>
-                    </div>
-                </div>
-            </div>
-            <div class="first-prod-container" id="first-prod-container"></div>
-            <div class="second-prod-container" id="second-prod-container"></div>
-        </div>
-        <button class="all" id="button">All foxes</button>
-    </main>
-    <footer>
-        <div class="footer">
-            <div class="social-media">
-                <div class="foxminded-footer-box">
-                    <img src="img/foxminded-footer.png">
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur consectetur</p>
-                <p>Call us: 8956 3254 7887</p>
-                <div class="social-media-icons">
-                    <img src="img/instagram.png">
-                    <img src="img/telegram.png">
-                    <img src="img/twitter.png">
-                </div>
-            </div>
-            <div class="footer-blocks">
-                <div class="first">
-                    <div class="first-blocks">
-                        <h4>Shop</h4>
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum</p>
-                    </div>
-                    <div class="first-blocks">
-                        <h4>Collection</h4>
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum</p>
-                    </div>
-                </div>
-                <div class="second">
-                    <div class="second-blocks">
-                        <h4>Products</h4>
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum</p>
-                    </div>
-                    <div class="second-blocks">
-                        <h4>Weekly<br>updates</h4>
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum</p>
-                    </div>
-                    <div class="second-blocks">
-                        <h4>About us</h4>
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum</p>
-                        <p>Lorem ipsum</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-info">
-            <p>Storelogo, 2023 All right reserved</p>
-        </div>
-    </footer>
-
-
-
-    <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
-</body>
-
->>>>>>> master
 </html>
